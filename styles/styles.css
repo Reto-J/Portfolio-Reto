@@ -338,6 +338,7 @@ ul{
     padding-block: 25px;
     display: flex;
     flex-direction: row;
+    gap: 15px;
     justify-content: space-between;
     align-items: center;
 }
@@ -350,7 +351,7 @@ ul{
     width: 350px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     overflow:hidden;
 
     transition:.35s ease;
