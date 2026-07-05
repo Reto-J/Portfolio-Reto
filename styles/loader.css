@@ -1,0 +1,75 @@
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999999;
+    transition:transform 3s ease;
+}
+
+#loader-name{
+    font-size:5rem;
+    color:white;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:120px;
+    letter-spacing:2px;
+    transition: transform .8s ease;
+}
+
+.loader-left,
+.loader-right{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.remove{
+    position:relative;
+    display:inline-block;
+}
+
+.line{
+    position:absolute;
+    left:0;
+    top:50%;
+    width:0;
+    height:3px;
+    background:white;
+}
+
+.line{
+    transition:width .8s ease;
+}
+
+.remove .text{
+    transition:
+        opacity .8s ease,
+        filter .8s ease,
+        transform .8s ease;
+}
+
+.line{
+    position:absolute;
+    left:0;
+    top:50%;
+    width:0;
+    height:3px;
+    background:white;
+    transition:
+        width .8s ease,
+        opacity .4s ease;
+}
+
+.keep{
+    display:inline-block;
+    transition:
+        transform .8s ease,
+        letter-spacing .8s ease;
+}

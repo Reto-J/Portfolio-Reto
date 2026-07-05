@@ -1,0 +1,71 @@
+
+/* 
+.cursor{
+    width:20px;
+    height:20px;
+    border:2px solid rgba(255,255,255,.75);
+    backdrop-filter:blur(4px);
+    border-radius:50%;
+    position:fixed;
+    left:0;
+    top:0;
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+    transition:
+        width .25s ease,
+        height .25s ease,
+        border .25s ease;
+    z-index:9999;
+}
+
+.cursor-hover{
+    width:45px;
+    height:45px;
+    border-width:3px;
+} */
+
+body{
+    cursor:none;
+}
+
+/* Small dot */
+
+.cursor-dot{
+    width:8px;
+    height:8px;
+    background:white;
+    border-radius:50%;
+    position:fixed;
+    left:0;
+    mix-blend-mode: difference;
+    top:0;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    z-index:10000;
+}
+
+/* Outer ring */
+
+.cursor-ring{
+    width:34px;
+    height:34px;
+    border:2px solid rgba(255,255,255,.7);
+    border-radius:50%;
+    position:fixed;
+    left:0;
+    top:0;
+    transform:translate(-50%,-50%);
+    mix-blend-mode: difference;
+    pointer-events:none;
+    transition:
+        width .25s ease,
+        height .25s ease,
+        border .25s ease,
+        background .25s ease;
+    z-index:9999;
+}
+.cursor-grow{
+    width:40px;
+    height:40px;
+    border:3px solid white;
+}
