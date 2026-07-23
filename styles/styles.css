@@ -474,6 +474,8 @@ section.show{
 
     body {
         padding-inline: 20px;
+        align-items: center;
+        text-align: center;
     }
 
     .navbar {
