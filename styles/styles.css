@@ -469,3 +469,40 @@ section.show{
 .end{
  text-align: center;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        padding-inline: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro {
+        padding-right: 0;
+    }
+
+    .service-row,
+    .skills-row,
+    .projects-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .service,
+    .skill,
+    .project {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
