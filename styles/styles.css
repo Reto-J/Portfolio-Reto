@@ -63,6 +63,10 @@ a{
     padding:10px;
 }
 
+#home{
+    overflow: hidden;
+}
+
 a::after{
     content:"";
     position:absolute;

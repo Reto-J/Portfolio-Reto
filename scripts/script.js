@@ -19,9 +19,14 @@ window.addEventListener('scroll', () => {
     // console.log(window.scrollY);
     const scrollPosition = window.scrollY;
     const homeHeight = homeSection.offsetHeight;
+    const homeRect = homeSection.getBoundingClientRect();
 
-    introImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+    if (homeRect.bottom > 0 && homeRect.top < window.innerHeight) {
+        const progress = -homeRect.top;
+    introImage.style.transform = `translateY(${scrollPosition * 0.3}px)`;
     introContent.style.transform = `translateY(${scrollPosition * 0.2}px)`;
+    }
+
     
     if (scrollPosition > 50) {
         navbar.classList.add("scrolled");
