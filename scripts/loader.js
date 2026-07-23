@@ -71,6 +71,7 @@ function startLoader() {
         loaderName.style.gap = "0px";
         setTimeout(() => {
           loader.style.transform = "translateY(-100%)";
+          loader.remove();
         }, 1500);
       }, MERGE_TIME);
     }, FADE_TIME);
